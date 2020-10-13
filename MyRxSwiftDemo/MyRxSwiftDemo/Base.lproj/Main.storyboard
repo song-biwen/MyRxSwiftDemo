@@ -240,6 +240,21 @@
             </objects>
             <point key="canvasLocation" x="2383" y="90"/>
         </scene>
+        <!--View4 Controller-->
+        <scene sceneID="EZk-k9-zt3">
+            <objects>
+                <viewController storyboardIdentifier="View4Controller" id="kht-yq-U3u" customClass="View4Controller" customModule="MyRxSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6SY-27-qMS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Qhc-eP-OIL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="090-Za-0Hc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3118" y="96"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
