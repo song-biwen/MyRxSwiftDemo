@@ -15,7 +15,7 @@ class UMainVC: UIViewController,UITableViewDelegate {
     
     var disposeBag = DisposeBag()
     
-    let names = ["ViewController","View2Controller", "View3Controller", "View4Controller"]
+    let names = ["ViewController","View2Controller", "View3Controller", "View4Controller", "View5Controller" ,"UTableVC"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +32,24 @@ class UMainVC: UIViewController,UITableViewDelegate {
         }.disposed(by: disposeBag)
         
         tableView.rx.itemSelected.subscribe(onNext:{[weak self] (indexPath) in
+            
             let name = self!.names[indexPath.row]
-            let mainSb = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-            let vc = mainSb.instantiateViewController(withIdentifier: name)
-            self?.navigationController?.pushViewController(vc, animated: true)
+            
+            if indexPath.row < 5 {
+                
+                let mainSb = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+                let vc = mainSb.instantiateViewController(withIdentifier: name)
+                self?.navigationController?.pushViewController(vc, animated: true)
+                
+            }else {
+                
+                let projectName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String
+                let className = projectName! + "." + name
+                let vc = NSClassFromString(className) as! UIViewController.Type
+                let viewController = vc.init()
+                self?.navigationController?.pushViewController(viewController, animated: true)
+            }
+           
             
         }).disposed(by: disposeBag)
         
