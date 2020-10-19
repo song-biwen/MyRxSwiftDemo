@@ -19,6 +19,11 @@
 		A0542B742534496A006CC369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0542B722534496A006CC369 /* LaunchScreen.storyboard */; };
 		A0542B7F2534496A006CC369 /* MyRxSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0542B7E2534496A006CC369 /* MyRxSwiftDemoTests.swift */; };
 		A0542B8A2534496A006CC369 /* MyRxSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0542B892534496A006CC369 /* MyRxSwiftDemoUITests.swift */; };
+		A066207925396A10008C7424 /* UTable2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066207825396A10008C7424 /* UTable2VC.swift */; };
+		A066207E25397243008C7424 /* UTable3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066207D25397243008C7424 /* UTable3VC.swift */; };
+		A066208325397553008C7424 /* UTable4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066208225397553008C7424 /* UTable4VC.swift */; };
+		A0662088253979D3008C7424 /* UTable5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0662087253979D3008C7424 /* UTable5VC.swift */; };
+		A066208D25398AC1008C7424 /* UTable6VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066208C25398AC1008C7424 /* UTable6VC.swift */; };
 		A0F932472536A89300FAECE5 /* View5Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F932462536A89300FAECE5 /* View5Controller.swift */; };
 		A0F9324C2536EA5700FAECE5 /* UTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F9324B2536EA5700FAECE5 /* UTableVC.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +64,11 @@
 		A0542B852534496A006CC369 /* MyRxSwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRxSwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0542B892534496A006CC369 /* MyRxSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRxSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		A0542B8B2534496A006CC369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A066207825396A10008C7424 /* UTable2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTable2VC.swift; sourceTree = "<group>"; };
+		A066207D25397243008C7424 /* UTable3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTable3VC.swift; sourceTree = "<group>"; };
+		A066208225397553008C7424 /* UTable4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTable4VC.swift; sourceTree = "<group>"; };
+		A0662087253979D3008C7424 /* UTable5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTable5VC.swift; sourceTree = "<group>"; };
+		A066208C25398AC1008C7424 /* UTable6VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTable6VC.swift; sourceTree = "<group>"; };
 		A0F932462536A89300FAECE5 /* View5Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View5Controller.swift; sourceTree = "<group>"; };
 		A0F9324B2536EA5700FAECE5 /* UTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTableVC.swift; sourceTree = "<group>"; };
 		E8448C7077677AA2D94F9783 /* Pods-MyRxSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRxSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-MyRxSwiftDemo/Pods-MyRxSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +142,11 @@
 				A01E82752535C1510026D700 /* View4Controller.swift */,
 				A0F932462536A89300FAECE5 /* View5Controller.swift */,
 				A0F9324B2536EA5700FAECE5 /* UTableVC.swift */,
+				A066207825396A10008C7424 /* UTable2VC.swift */,
+				A066207D25397243008C7424 /* UTable3VC.swift */,
+				A066208225397553008C7424 /* UTable4VC.swift */,
+				A0662087253979D3008C7424 /* UTable5VC.swift */,
+				A066208C25398AC1008C7424 /* UTable6VC.swift */,
 				A01E8266253570360026D700 /* UMainVC.swift */,
 				A0542B6D25344969006CC369 /* Main.storyboard */,
 				A0542B702534496A006CC369 /* Assets.xcassets */,
@@ -342,9 +357,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F932472536A89300FAECE5 /* View5Controller.swift in Sources */,
+				A0662088253979D3008C7424 /* UTable5VC.swift in Sources */,
 				A01E827125359AC50026D700 /* View3Controller.swift in Sources */,
 				A0542B6C25344969006CC369 /* ViewController.swift in Sources */,
+				A066207E25397243008C7424 /* UTable3VC.swift in Sources */,
+				A066208D25398AC1008C7424 /* UTable6VC.swift in Sources */,
+				A066208325397553008C7424 /* UTable4VC.swift in Sources */,
 				A01E826C253578460026D700 /* View2Controller.swift in Sources */,
+				A066207925396A10008C7424 /* UTable2VC.swift in Sources */,
 				A01E82762535C1510026D700 /* View4Controller.swift in Sources */,
 				A01E8267253570360026D700 /* UMainVC.swift in Sources */,
 				A0542B6825344969006CC369 /* AppDelegate.swift in Sources */,

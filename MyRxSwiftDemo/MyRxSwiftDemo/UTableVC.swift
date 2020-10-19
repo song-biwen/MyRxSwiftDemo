@@ -21,24 +21,21 @@ struct Music {
     
 }
 
-//歌曲列表数据源
-struct MusicListViewModel {
-    let data = Observable.just([
+
+class UTableVC: UIViewController {
+
+    //数据
+    var items = [
         Music(name: "无条件", singer: "陈奕迅"),
         Music(name: "你曾是少年", singer: "S.H.E"),
         Music(name: "从前的我", singer: "陈洁仪"),
         Music(name: "在木星", singer: "朴树"),
-    ])
+    ]
     
-}
-class UTableVC: UIViewController {
-
     //tableview对象
     let tableView = UITableView()
     //cell循环标识
     let cellReuseIdentifier = "Cell"
-    //歌曲列表数据源
-    let listViewModel = MusicListViewModel()
     //负责对象销毁
     let disposeBag = DisposeBag()
     
@@ -50,7 +47,7 @@ class UTableVC: UIViewController {
         setupUI()
         
         //将数据绑定在tableview上
-        listViewModel.data.bind(to: tableView.rx.items(cellIdentifier: cellReuseIdentifier)){ _,music,cell in
+        Observable.just(items).bind(to: tableView.rx.items(cellIdentifier: cellReuseIdentifier)){ _,music,cell in
             cell.textLabel?.text = music.name
             cell.detailTextLabel?.text = music.singer
         }.disposed(by: disposeBag)
@@ -61,7 +58,6 @@ class UTableVC: UIViewController {
                 self?.showAlert(msg: "歌名：\(music.name) ---歌手：\(music.singer)")
             })
             .disposed(by: disposeBag)
-        
     }
     
     //UI初始化
