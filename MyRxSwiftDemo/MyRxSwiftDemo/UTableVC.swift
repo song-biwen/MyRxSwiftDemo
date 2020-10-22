@@ -41,7 +41,7 @@ class UTableVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.backgroundColor = UIColor.red
         //UI初始化
         setupUI()

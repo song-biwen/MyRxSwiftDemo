@@ -15,7 +15,7 @@ class UMainVC: UIViewController,UITableViewDelegate {
     
     var disposeBag = DisposeBag()
     
-    let names = ["ViewController","View2Controller", "View3Controller", "View4Controller", "View5Controller" ,"UTableVC", "UTable2VC", "UTable3VC","UTable4VC","UTable5VC","UTable6VC"]
+    let names = ["ViewController","View2Controller", "View3Controller", "View4Controller", "View5Controller" ,"UTableVC", "UTable2VC", "UTable3VC","UTable4VC","UTable5VC","UTable6VC","UTable7VC"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
